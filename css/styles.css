@@ -1,0 +1,138 @@
+/*
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+/*
+======================================== */
+
+/* 2. Layout
+======================================== */
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  background: hsl(216, 50%, 16%);
+  width: 327px;
+  border-radius: 19px;
+  padding: 1.5em 1.4em;
+}
+
+.container {
+  margin: 0 auto;
+  width: 278px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+img,
+h2,
+p,
+.detail-creator {
+  grid-column: 1 / -1;
+}
+
+.detail-price {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1.25em;
+}
+
+.detail-time {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 1.25em;
+}
+
+.detail-creator {
+  border-top: 1px solid hsl(215, 32%, 27%);
+  padding-top: 1em;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*
+======================================== */
+
+/* 3. Typography
+======================================== */
+
+h2,
+span {
+  color: #fff;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 1em 0 0.8em;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+.detail-price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+/*
+======================================== */
+
+/* 4. icons
+======================================== */
+
+.icon-clock,
+.icon-ethereum {
+  margin-right: 0.5em;
+}
+
+.icon-avatar {
+  margin-right: 0.75em;
+}
+
+.icon-ethereum {
+  width: 11px;
+  height: 18px;
+}
+
+.icon-clock {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-avatar {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
