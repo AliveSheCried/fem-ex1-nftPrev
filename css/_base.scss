@@ -1,0 +1,24 @@
+:root {
+  // CSS variables here
+  //   Colors
+  --colour-background: hsl(217, 54%, 11%);
+  --colour-softBlue: hsl(215, 51%, 70%);
+  --colour-cyan: hsl(178, 100%, 50%);
+  --colour-cardBg: hsl(216, 50%, 16%);
+  --colour-line: hsl(215, 32%, 27%);
+  --colour-white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--colour-background);
+  color: var(--colour-softBlue);
+  font-family: "Outfit", sans-serif;
+  font-size: 93.75%; //93.75% = 15px of 16px browser default
+  font-weight: 300;
+}

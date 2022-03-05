@@ -1,0 +1,12 @@
+@mixin icons($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin fbox($content, $items, $padBot: 0px, $padTop: 0px) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  padding-bottom: $padBot;
+  padding-top: $padTop;
+}
