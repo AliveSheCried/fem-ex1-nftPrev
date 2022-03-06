@@ -1,6 +1,12 @@
 h2,
 span {
   color: var(--colour-white);
+
+  &:hover,
+  &:active {
+    color: var(--colour-cyan);
+    cursor: pointer;
+  }
 }
 
 h2 {
@@ -21,4 +27,11 @@ p {
 .detail-price {
   color: var(--colour-cyan);
   font-weight: 600;
+}
+
+// media query for larger screens
+@media (min-width: 376px) {
+  p {
+    margin-bottom: 1.5em;
+  }
 }

@@ -18,4 +18,8 @@
     border-radius: 20px;
     margin-right: 0.75em;
   }
+
+  &-view {
+    @include icons(48px, 48px);
+  }
 }

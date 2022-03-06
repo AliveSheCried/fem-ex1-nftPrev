@@ -19,16 +19,47 @@ main {
   grid-template-columns: repeat(2, 1fr);
 }
 
-img {
-  width: 100%;
-  border-radius: 8px;
+// media query for larger screens
+@media (min-width: 376px) {
+  main {
+    width: 350px;
+  }
+
+  .container {
+    width: 302px;
+  }
 }
 
-img,
+.nft,
 h2,
 p,
 .detail-creator {
   grid-column: 1 / -1;
+}
+
+.nft {
+  height: 302px;
+  background: url("../images/image-equilibrium.jpg");
+  background-size: cover;
+
+  &__overlay {
+    @include fbox(center, center);
+    opacity: 0;
+    height: 100%;
+    transition: opacity 0.4s;
+
+    &:hover {
+      transform: opacity 0.4s linear;
+      opacity: 1;
+      cursor: pointer;
+      background: rgba(0, 255, 247, 0.4);
+    }
+  }
+}
+
+.nft,
+.nft__overlay {
+  border-radius: 8px;
 }
 
 .detail {
